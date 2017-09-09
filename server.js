@@ -2,7 +2,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-var route = require('./routes/personRoute.js')
+var route = require('./routes/personRoute.js');
 var app = express();
 var port = 3000;
 
@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Route
-//app.use('/people', route);
+app.use('/person', route);
 
 //server listening
 app.listen(port, function(){
