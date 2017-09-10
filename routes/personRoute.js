@@ -6,16 +6,14 @@ var path = require('path');
 var people = [];
 
 
-router.get('/', function(req, res){
-    console.log('in person router');
+router.get('/', function (req, res) {
     res.send(people);
-})//END router get
+}) //END router get
 
-router.post('/', function (req, res){
+router.post('/', function (req, res) {
     var person = req.body;
+    //add new person to people array
     people.push(person);
-    console.log('people array:', people);
-    
-})//END router post
+}) //END router post
 
 module.exports = router

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../vendors/jquery.js"></script>
     <script src="../scripts/client.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
     <title>People Lister</title>
 </head>
 <body>
@@ -14,8 +16,12 @@
         <input type="text" id ="name" placeholder="Name">
         <input type="text"  id ="fact" placeholder="Fact">
         <button id ="addButton">Add Person</button>
-        <section id='peopleList'>
-        </section>
+        <div id='peopleList'>
+        </div>
+        <div id="slideShow">
+        </div>
+        <button class="nextPrev" onclick="allPeeps.next()" >Next</button>
+        <button class="nextPrev" onclick="allPeeps.previous()">Prev</button>
     </main>
     
 </body>

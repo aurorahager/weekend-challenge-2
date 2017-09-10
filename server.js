@@ -9,17 +9,19 @@ var port = 3000;
 
 //middleware 
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 //Route
 app.use('/person', route);
 
 //server listening
-app.listen(port, function(){
+app.listen(port, function () {
     console.log('listening on port 3000');
-})//END listen
+}) //END listen
 
 //Base URL 
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
     res.sendFile(path.resolve('public/views/index.html'));
-})//END get base URL
+}) //END get base URL
