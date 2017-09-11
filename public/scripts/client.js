@@ -43,9 +43,7 @@ function showPeeps() {
                 var all = resp.length;
                 var spot = i
                 $('#peopleList').append('<p class="peep">' + resp[i].name + ': ' + resp[i].fact + '</p>');
-                $('#slideShow').append('<script>allPeeps = w3.slideshow(".peep", 0);</script >');
             } //END for loop
-
         } //END success function
     }) //END ajax get
 } //END showPeeps function
